@@ -1,38 +1,131 @@
-.App {
+.halant {
+  font-family: "Halant", serif;
+  font-size: 0.5em;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.blue-box-shadow {
+  box-shadow: inset 0 -0.6em #64b5f6;
+}
+
+.app {
+  padding: 2em 15%;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+}
+
+.app-header--heading {
+  font-size: 1em;
+  font-weight: 300;
+  flex: 1.5;
+}
+
+.app-nav {
+  display: flex;
+  flex: 1;
+}
+
+.app-nav--item {
+  flex: 1;
+}
+
+.app-social-links {
+  display: flex;
+}
+
+.app-social-links--item:nth-child(even) {
+  padding: 0 1em;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  line-height: 3rem;
+  width: 55%;
+  padding: 5em 0;
+  margin: 0 auto;
+}
+
+.app-section-heading {
+  font-size: 1em;
+  color: #64b5f6;
+  font-weight: 300;
+}
+
+.app-about {
+  display: flex;
+}
+
+.app-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-card {
+  padding: 0 0.25em;
+}
+
+.app-about-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.app-feature-work--item {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.app-feature-work--item-info {
+  padding: 0 0 0 5%;
+}
+
+.app-feature-work--item-info--tech {
+  font-size: 0.75em;
+  margin: 1em 0;
+}
+
+.app-feature-work--item-info--tech > li {
+  background-color: #64b5f6;
+  color: #fff;
+  margin: 0.2em;
+  padding: 0.2em 0.5em;
+  border-radius: 0.1em;
+}
+
+.app-feature-work--item-info--title {
+  font-size: 2em;
+  line-height: 110%;
+  font-weight: 400;
+  margin: 0.25em 0;
+}
+
+.app-feature-work--item-info--role {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.say-hello {
+  border: 0.125em solid #64b5f6;
+  color: #64b5f6;
+  border-radius: 0.1em;
+  padding: 0 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.say-hello:hover {
+  background-color: #64b5f6;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-contact {
+  margin: 5% 0;
 }
