@@ -1,18 +1,18 @@
 .halant {
   font-family: "Halant", serif;
-  font-size: 0.5em;
 }
 
 .semi-bold {
   font-weight: 600;
 }
 
-.blue-box-shadow {
+.queen {
   box-shadow: inset 0 -0.6em #64b5f6;
+  color: #162938;
 }
 
 .app {
-  padding: 2em 15%;
+  padding: 2em 20%;
 }
 
 .app-header {
@@ -46,9 +46,9 @@
 .app-main {
   display: flex;
   flex-direction: column;
-  font-size: 2em;
+  font-size: 2.25em;
   line-height: 3rem;
-  width: 55%;
+  width: 50%;
   padding: 5em 0;
   margin: 0 auto;
 }
@@ -56,11 +56,25 @@
 .app-section-heading {
   font-size: 1em;
   color: #64b5f6;
-  font-weight: 300;
+}
+
+.app-main--social-links {
+  font-size: 0.6em;
 }
 
 .app-about {
   display: flex;
+  align-items: center;
+}
+
+.app-about--info > p {
+  margin: 1em 0;
+  width: 75%;
+}
+
+.app-about-image {
+  width: 25%;
+  height: auto;
 }
 
 .app-card-group {
@@ -70,12 +84,18 @@
 }
 
 .app-card {
-  padding: 0 0.25em;
+  padding: 0.5em;
+  width: 25%;
+  height: auto;
 }
 
-.app-about-image {
-  max-width: 300px;
-  max-height: 300px;
+.app-card--image {
+  width: 100%;
+  height: 100%;
+}
+
+.app-feature-work {
+  margin: 5% 0;
 }
 
 .app-feature-work--item {
@@ -88,8 +108,24 @@
   padding: 0 0 0 5%;
 }
 
+.app-feature-work--image {
+  width: 50%;
+  height: auto;
+}
+
+.app-feature-work--item-info--role {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.app-feature-work--item-info--title {
+  font-size: 2.5em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
 .app-feature-work--item-info--tech {
-  font-size: 0.75em;
+  font-size: 0.8em;
   margin: 1em 0;
 }
 
@@ -98,27 +134,14 @@
   color: #fff;
   margin: 0.2em;
   padding: 0.2em 0.5em;
-  border-radius: 0.1em;
-}
-
-.app-feature-work--item-info--title {
-  font-size: 2em;
-  line-height: 110%;
-  font-weight: 400;
-  margin: 0.25em 0;
-}
-
-.app-feature-work--item-info--role {
-  font-size: 0.8em;
-  font-style: italic;
 }
 
 .say-hello {
-  border: 0.125em solid #64b5f6;
-  color: #64b5f6;
-  border-radius: 0.1em;
-  padding: 0 2px;
+  box-shadow: inset 0 -0.6em #64b5f6;
   text-align: center;
+  font-weight: 600;
+  color: #162938;
+  padding: 0 4px;
 }
 
 .say-hello:hover {
@@ -126,6 +149,15 @@
   color: #fff;
 }
 
+footer {
+  margin: 5% 0 0 0;
+  display: flex;
+}
+
 .app-contact {
-  margin: 5% 0;
+  flex: 2;
+}
+
+.resume {
+  border-bottom: 1px dotted;
 }

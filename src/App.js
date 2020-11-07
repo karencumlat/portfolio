@@ -12,19 +12,19 @@ function renderSocialLinks() {
         className="app-social-links--item"
         href="https://www.behance.net/karencumlat"
       >
-        Behance
+        <FontAwesomeIcon icon={["fab", "behance"]} />
       </a>
       <a
         className="app-social-links--item"
         href="https://github.com/karencumlat"
       >
-        GitHub
+        <FontAwesomeIcon icon={["fab", "github"]} />
       </a>
       <a
         className="app-social-links--item"
         href="https://ca.linkedin.com/in/karencumlat"
       >
-        LinkedIn
+        <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
       </a>
     </div>
   );
@@ -41,10 +41,10 @@ function App() {
         </h1>
 
         <nav className="app-nav">
-          <a className="app-nav--item" href="#about">
+          <a className="app-nav--item" href="#app-about">
             About
           </a>
-          <a className="app-nav--item" href="#work">
+          <a className="app-nav--item" href="#app-work">
             Work
           </a>
           <a
@@ -53,11 +53,8 @@ function App() {
           >
             Resume
           </a>
-          <a
-            className="app-nav--item say-hello"
-            href="mailto:karencumlat@gmail.com"
-          >
-            Say Hello
+          <a className="app-nav--item" href="mailto:karencumlat@gmail.com">
+            Contact
           </a>
         </nav>
       </header>
@@ -65,15 +62,15 @@ function App() {
         <span className="semi-bold"> Hi, I'm Karen.</span>
         <span className="app-main--description">
           My goal is to be a{" "}
-          <span className="semi-bold blue-box-shadow">queen of one trade</span>,
-          but for now, I'm like the Jack of all trades.
+          <span className="semi-bold queen">queen of one trade</span>, but for
+          now, I'm like the Jack of all trades.
         </span>
-        <span className="halant">{renderSocialLinks()}</span>
+        <span className="app-main--social-links">{renderSocialLinks()}</span>
       </main>
-      <section id="about">
+      <section id="app-about">
         <h2 className="app-section-heading">ABOUT ME</h2>
         <div className="app-about">
-          <div className="app-about-info">
+          <div className="app-about--info">
             <p>
               Hello, my name is Karen Cumlat and I am a digital artist and front
               end developer based in Vancouver.
@@ -83,21 +80,28 @@ function App() {
               Oh! In my spare time I talk to my cat or Netflix binge-watching .
             </p>
             <p>✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ </p>
-            <p>Get in touch: karencumlat@gmail.com</p>
+            <p>
+              Get in touch:{" "}
+              <a href="mailto:karencumlat@gmail.com">karencumlat@gmail.com</a>
+            </p>
           </div>
           <img
-            src="https://placeimg.com/300/300/any"
+            src={process.env.PUBLIC_URL + "/images/karen.jpg"}
             alt="Karen Cumlat"
             className="app-about-image"
           />
         </div>
       </section>
-      <section id="app-feature-work">
+      <section id="app-work" className="app-feature-work">
         <h2 className="app-section-heading">FEATURE WORK</h2>
         {featureWork.map((feat) => {
           return (
             <div className="app-feature-work--item">
-              <img src="https://placeimg.com/500/300/any" alt={feat.tag} />
+              <img
+                className="app-feature-work--image"
+                src={process.env.PUBLIC_URL + "/images/" + feat.tag + ".jpg"}
+                alt={feat.tag}
+              />
               <div className="app-feature-work--item-info">
                 <p className="app-feature-work--item-info--role">{feat.role}</p>
                 <h3 className="halant app-feature-work--item-info--title">
@@ -130,25 +134,35 @@ function App() {
         <h2 className="app-section-heading">OTHER WORK</h2>
         <div className="app-card-group">
           {otherWork.map((other) => {
-            const imgUrl = `/images/${other.tag}.png`;
+            const imgUrl = `/images/${other.tag}.jpg`;
             return (
               <div className="app-card">
-                <img src={process.env.PUBLIC_URL + imgUrl} alt={other.tag} />
+                <img
+                  src={process.env.PUBLIC_URL + imgUrl}
+                  alt={other.tag}
+                  className="app-card--image"
+                />
               </div>
             );
           })}
         </div>
       </section>
-      <section className="app-contact">
-        <a href="mailto:karencumlat@gmail.com" className="say-hello">
-          Say Hello
-        </a>{" "}
-        or checkout my{" "}
-        <a href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf">
-          Resume
-        </a>
-      </section>
-      <footer>{renderSocialLinks()}</footer>
+      <footer>
+        <div className="app-contact">
+          <a href="mailto:karencumlat@gmail.com" className="say-hello">
+            Say hello
+          </a>{" "}
+          or checkout my{" "}
+          <a
+            href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
+            className="resume"
+          >
+            Resume
+          </a>
+        </div>
+
+        {renderSocialLinks()}
+      </footer>
     </div>
   );
 }

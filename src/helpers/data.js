@@ -5,19 +5,19 @@ export const featureWork = [
     tag: "paprika",
     tech: ["React", "SCSS", "Storybook", "TypeScript"],
     description:
-      "Cat milk copy park pee walk owner escape bored tired cage droppings sick vet vomit sleep in the bathroom sink for woops poop",
-    link: "",
-    github: "",
+      "Contributed and develop components such as Avatar, Card, and ProgressBar to Paprika, a UI component library of the Starling Design System by Galvanize.",
+    link: "http://paprika.highbond.com/",
+    github: "https://github.com/acl-services/paprika",
   },
   {
-    name: "Wasabicon",
+    name: "Wasabicons",
     role: "UX Developer",
-    tag: "wasabicon",
+    tag: "wasabicons",
     tech: ["React", "SCSS", "Storybook", "Heroku"],
     description:
-      "Cat milk copy park pee walk owner escape bored tired cage droppings sick vet vomit sleep in the bathroom sink for woops poop",
-    link: "",
-    github: "",
+      "Deploy wasabicons (icon library of the Starling Design System by Galvanize) storybook to Heroku",
+    link: "https://design.wegalvanize.com/icons",
+    github: "#",
   },
   {
     name: "Dress My Feet",
@@ -25,9 +25,9 @@ export const featureWork = [
     tag: "dressmyfeet",
     tech: ["React", "CSS", "GitHub"],
     description:
-      "Cat milk copy park pee walk owner escape bored tired cage droppings sick vet vomit sleep in the bathroom sink for woops poop",
-    link: "",
-    github: "",
+      "An illustration /web project showcasing some love for food with these fresh and tasty Bucketfeet shoe designs.",
+    link: "https://karencumlat.github.io/dressmyfeet/",
+    github: "https://github.com/karencumlat/dressmyfeet",
   },
 ];
 
@@ -38,4 +38,6 @@ export const otherWork = [
   { tag: "dailyillustration" },
   { tag: "basketball" },
   { tag: "played" },
+  { tag: "noodleparadise" },
+  { tag: "gameboy" },
 ];
