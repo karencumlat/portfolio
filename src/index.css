@@ -8,19 +8,20 @@
 }
 
 body {
-  color: #212121;
+  color: #162938;
   margin: 0 auto;
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14pt;
   font-weight: 300;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
-  color: #616161;
+  color: #162938;
   cursor: pointer;
 }
 

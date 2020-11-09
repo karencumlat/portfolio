@@ -7,12 +7,13 @@
 }
 
 .queen {
-  box-shadow: inset 0 -0.6em #64b5f6;
+  box-shadow: inset 0 -0.6em #64b5f7;
   color: #162938;
 }
 
 .app {
   padding: 2em 20%;
+  overflow-x: hidden;
 }
 
 .app-header {
@@ -55,7 +56,7 @@
 
 .app-section-heading {
   font-size: 1em;
-  color: #64b5f6;
+  color: #162938;
 }
 
 .app-main--social-links {
@@ -130,14 +131,14 @@
 }
 
 .app-feature-work--item-info--tech > li {
-  background-color: #64b5f6;
+  background-color: #162938;
   color: #fff;
   margin: 0.2em;
   padding: 0.2em 0.5em;
 }
 
 .say-hello {
-  box-shadow: inset 0 -0.6em #64b5f6;
+  box-shadow: inset 0 -0.6em #64b5f7;
   text-align: center;
   font-weight: 600;
   color: #162938;
@@ -145,7 +146,7 @@
 }
 
 .say-hello:hover {
-  background-color: #64b5f6;
+  background-color: #64b5f7;
   color: #fff;
 }
 
@@ -160,4 +161,106 @@ footer {
 
 .resume {
   border-bottom: 1px dotted;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 2em;
+    font-size: 0.75em;
+  }
+
+  .app-header--heading {
+    display: none;
+  }
+
+  .app-main {
+    width: 70%;
+    font-size: 1em;
+    line-height: 1.25rem;
+    padding: 3em 0;
+  }
+
+  .app-section-heading {
+    font-size: 0.9em;
+  }
+
+  .app-about-image {
+    display: none;
+  }
+
+  .app-about--info > p {
+    width: 100%;
+  }
+
+  .app-feature-work--item {
+    display: block;
+  }
+
+  .app-feature-work--image {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1em 0;
+  }
+
+  .app-card {
+    padding: 0.5em;
+    width: 50%;
+    height: auto;
+  }
+
+  footer,
+  footer > .app-social-links {
+    display: block;
+    text-align: center;
+  }
+
+  footer > .app-social-links {
+    margin: 1em 0;
+  }
+}
+
+/* 2.3 Medium screens and up */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .app {
+    padding: 2.5em;
+  }
+
+  .app-header--heading {
+    display: none;
+  }
+
+  .app-nav {
+    text-align: center;
+  }
+
+  .app-main {
+    width: 100%;
+    padding: 2em 1em;
+    font-size: 2em;
+  }
+
+  .app-section-heading {
+    font-size: 1em;
+  }
+
+  .app-feature-work--item {
+    display: block;
+  }
+
+  .app-feature-work--image {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1em 0;
+  }
+
+  .app-card {
+    padding: 0.5em;
+    width: 33%;
+    height: auto;
+  }
+}
+
+/* 2.4 Large Screens */
+@media screen and (min-width: 993px) {
+  /* styles for large and onward only */
 }

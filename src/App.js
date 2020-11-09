@@ -12,19 +12,19 @@ function renderSocialLinks() {
         className="app-social-links--item"
         href="https://www.behance.net/karencumlat"
       >
-        <FontAwesomeIcon icon={["fab", "behance"]} />
+        <FontAwesomeIcon icon={["fab", "behance"]} role="img" />
       </a>
       <a
         className="app-social-links--item"
         href="https://github.com/karencumlat"
       >
-        <FontAwesomeIcon icon={["fab", "github"]} />
+        <FontAwesomeIcon icon={["fab", "github"]} role="img" />
       </a>
       <a
         className="app-social-links--item"
         href="https://ca.linkedin.com/in/karencumlat"
       >
-        <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+        <FontAwesomeIcon icon={["fab", "linkedin-in"]} role="img" />
       </a>
     </div>
   );
@@ -42,19 +42,19 @@ function App() {
 
         <nav className="app-nav">
           <a className="app-nav--item" href="#app-about">
-            About
+            about
           </a>
           <a className="app-nav--item" href="#app-work">
-            Work
+            work
           </a>
           <a
             className="app-nav--item"
             href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
           >
-            Resume
+            resume
           </a>
           <a className="app-nav--item" href="mailto:karencumlat@gmail.com">
-            Contact
+            say hello
           </a>
         </nav>
       </header>
@@ -100,7 +100,7 @@ function App() {
               <img
                 className="app-feature-work--image"
                 src={process.env.PUBLIC_URL + "/images/" + feat.tag + ".jpg"}
-                alt={feat.tag}
+                alt={feat.alt}
               />
               <div className="app-feature-work--item-info">
                 <p className="app-feature-work--item-info--role">{feat.role}</p>
@@ -116,12 +116,15 @@ function App() {
                 <ul className="app-feature-work--item-info--links">
                   <li>
                     <a href={feat.github}>
-                      <FontAwesomeIcon icon={["fab", "github"]} />
+                      <FontAwesomeIcon icon={["fab", "github"]} role="img" />
                     </a>
                   </li>
                   <li>
                     <a href={feat.link}>
-                      <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      <FontAwesomeIcon
+                        icon={["fas", "external-link-alt"]}
+                        role="img"
+                      />
                     </a>
                   </li>
                 </ul>

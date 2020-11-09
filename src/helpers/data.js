@@ -8,6 +8,7 @@ export const featureWork = [
       "Contributed and develop components such as Avatar, Card, and ProgressBar to Paprika, a UI component library of the Starling Design System by Galvanize.",
     link: "http://paprika.highbond.com/",
     github: "https://github.com/acl-services/paprika",
+    alt: "Group of Paprika Card component",
   },
   {
     name: "Wasabicons",
@@ -18,6 +19,7 @@ export const featureWork = [
       "Deploy wasabicons (icon library of the Starling Design System by Galvanize) storybook to Heroku",
     link: "https://design.wegalvanize.com/icons",
     github: "#",
+    alt: "Wasabicons library",
   },
   {
     name: "Dress My Feet",
@@ -28,6 +30,7 @@ export const featureWork = [
       "An illustration /web project showcasing some love for food with these fresh and tasty Bucketfeet shoe designs.",
     link: "https://karencumlat.github.io/dressmyfeet/",
     github: "https://github.com/karencumlat/dressmyfeet",
+    alt: "Dress my feet basic black sneakers",
   },
 ];
 
