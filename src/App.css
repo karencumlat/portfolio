@@ -12,7 +12,7 @@
 }
 
 .app {
-  padding: 2em 20%;
+  padding: 2em 5em;
   overflow-x: hidden;
 }
 
@@ -78,6 +78,10 @@
   height: auto;
 }
 
+.app-other--work {
+  margin: 5% 0;
+}
+
 .app-card-group {
   display: flex;
   flex-wrap: wrap;
@@ -85,8 +89,8 @@
 }
 
 .app-card {
-  padding: 0.5em;
-  width: 25%;
+  padding: 1em 0.5em;
+  width: 50%;
   height: auto;
 }
 
@@ -95,8 +99,12 @@
   height: 100%;
 }
 
-.app-feature-work {
-  margin: 5% 0;
+.app-card--title {
+  font-size: 0.85em;
+}
+
+.app-card--title > a:link {
+  border-bottom: 1px dotted;
 }
 
 .app-feature-work--item {
@@ -153,6 +161,7 @@
 footer {
   margin: 5% 0 0 0;
   display: flex;
+  justify-content: center;
 }
 
 .app-contact {
@@ -161,6 +170,15 @@ footer {
 
 .resume {
   border-bottom: 1px dotted;
+}
+
+.about-timeline-list {
+  display: inline-block;
+}
+
+.about-timeline--check-circle {
+  color: #64b5f7;
+  margin: 0 0.5em 0 0.25em;
 }
 
 @media screen and (max-width: 600px) {
@@ -254,13 +272,20 @@ footer {
   }
 
   .app-card {
-    padding: 0.5em;
-    width: 33%;
+    padding: 1em 0.5em;
+    width: 100%;
     height: auto;
   }
 }
 
 /* 2.4 Large Screens */
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1024px) {
   /* styles for large and onward only */
+}
+
+@media screen and (min-width: 1824px) {
+  /* styles for large and onward only */
+  .app {
+    padding: 2.5em 20%;
+  }
 }

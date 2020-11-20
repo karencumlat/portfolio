@@ -11,20 +11,23 @@ function renderSocialLinks() {
       <a
         className="app-social-links--item"
         href="https://www.behance.net/karencumlat"
+        aria-label="Behance"
       >
-        <FontAwesomeIcon icon={["fab", "behance"]} role="img" />
+        <FontAwesomeIcon icon={["fab", "behance"]} />
       </a>
       <a
         className="app-social-links--item"
         href="https://github.com/karencumlat"
+        aria-label="Github"
       >
-        <FontAwesomeIcon icon={["fab", "github"]} role="img" />
+        <FontAwesomeIcon icon={["fab", "github"]} />
       </a>
       <a
         className="app-social-links--item"
         href="https://ca.linkedin.com/in/karencumlat"
+        aria-label="LinkedIn"
       >
-        <FontAwesomeIcon icon={["fab", "linkedin-in"]} role="img" />
+        <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
       </a>
     </div>
   );
@@ -41,11 +44,11 @@ function App() {
         </h1>
 
         <nav className="app-nav">
-          <a className="app-nav--item" href="#app-about">
-            about
-          </a>
           <a className="app-nav--item" href="#app-work">
             work
+          </a>
+          <a className="app-nav--item" href="#app-about">
+            about
           </a>
           <a
             className="app-nav--item"
@@ -67,31 +70,6 @@ function App() {
         </span>
         <span className="app-main--social-links">{renderSocialLinks()}</span>
       </main>
-      <section id="app-about">
-        <h2 className="app-section-heading">ABOUT ME</h2>
-        <div className="app-about">
-          <div className="app-about--info">
-            <p>
-              Hello, my name is Karen Cumlat and I am a digital artist and front
-              end developer based in Vancouver.
-            </p>
-
-            <p>
-              Oh! In my spare time I talk to my cat or Netflix binge-watching .
-            </p>
-            <p>✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ </p>
-            <p>
-              Get in touch:{" "}
-              <a href="mailto:karencumlat@gmail.com">karencumlat@gmail.com</a>
-            </p>
-          </div>
-          <img
-            src={process.env.PUBLIC_URL + "/images/karen.jpg"}
-            alt="Karen Cumlat"
-            className="app-about-image"
-          />
-        </div>
-      </section>
       <section id="app-work" className="app-feature-work">
         <h2 className="app-section-heading">FEATURE WORK</h2>
         {featureWork.map((feat) => {
@@ -115,12 +93,12 @@ function App() {
                 </ul>
                 <ul className="app-feature-work--item-info--links">
                   <li>
-                    <a href={feat.github}>
-                      <FontAwesomeIcon icon={["fab", "github"]} role="img" />
+                    <a href={feat.github} aria-label="GitHub">
+                      <FontAwesomeIcon icon={["fab", "github"]} />
                     </a>
                   </li>
                   <li>
-                    <a href={feat.link}>
+                    <a href={feat.link} aria-label={`View ${feat.name}`}>
                       <FontAwesomeIcon
                         icon={["fas", "external-link-alt"]}
                         role="img"
@@ -133,7 +111,7 @@ function App() {
           );
         })}
       </section>
-      <section className="app-other-work">
+      <section className="app-other--work">
         <h2 className="app-section-heading">OTHER WORK</h2>
         <div className="app-card-group">
           {otherWork.map((other) => {
@@ -145,27 +123,54 @@ function App() {
                   alt={other.tag}
                   className="app-card--image"
                 />
+                {other.tag === "dailyillustration" ? (
+                  <span className="app-card--title">
+                    {other.name} on <a href="Redbubble.com">{other.type}</a>
+                  </span>
+                ) : (
+                  <span className="app-card--title">
+                    {other.name} - {other.year} - {other.type}
+                  </span>
+                )}
               </div>
             );
           })}
         </div>
       </section>
-      <footer>
-        <div className="app-contact">
-          <a href="mailto:karencumlat@gmail.com" className="say-hello">
-            Say hello
-          </a>{" "}
-          or checkout my{" "}
-          <a
-            href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
-            className="resume"
-          >
-            Resume
-          </a>
-        </div>
+      <section id="app-about">
+        <h2 className="app-section-heading">ABOUT ME</h2>
+        <div className="app-about">
+          <div className="app-about--info">
+            <p>
+              Hello, my name is Karen Cumlat and I am a digital artist and front
+              end developer based in Vancouver.
+            </p>
 
-        {renderSocialLinks()}
-      </footer>
+            <p>
+              Oh! In my spare time I talk to my cat or Netflix binge-watching .
+            </p>
+
+            <div className="app-contact">
+              <a href="mailto:karencumlat@gmail.com" className="say-hello">
+                Say hello
+              </a>{" "}
+              or checkout my{" "}
+              <a
+                href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
+                className="resume"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+          <img
+            src={process.env.PUBLIC_URL + "/images/karen.jpg"}
+            alt="Karen Cumlat"
+            className="app-about-image"
+          />
+        </div>
+      </section>
+      <footer>{renderSocialLinks()}</footer>
     </div>
   );
 }
