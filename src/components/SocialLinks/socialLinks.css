@@ -1,0 +1,7 @@
+.app-social-links {
+  display: flex;
+}
+
+.app-social-links--item:nth-child(even) {
+  padding: 0 1em;
+}

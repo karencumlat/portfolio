@@ -1,37 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import SocialLinks from "./components/SocialLinks";
+import FeatureWork from "./components/FeatureWork";
+import WorkCard from "./components/WorkCard";
 
 import "./App.css";
 import "./helpers/fontawesome";
 import { featureWork, otherWork } from "./helpers/data";
-
-function renderSocialLinks() {
-  return (
-    <div className="app-social-links">
-      <a
-        className="app-social-links--item"
-        href="https://www.behance.net/karencumlat"
-        aria-label="Behance"
-      >
-        <FontAwesomeIcon icon={["fab", "behance"]} />
-      </a>
-      <a
-        className="app-social-links--item"
-        href="https://github.com/karencumlat"
-        aria-label="Github"
-      >
-        <FontAwesomeIcon icon={["fab", "github"]} />
-      </a>
-      <a
-        className="app-social-links--item"
-        href="https://ca.linkedin.com/in/karencumlat"
-        aria-label="LinkedIn"
-      >
-        <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-      </a>
-    </div>
-  );
-}
 
 function App() {
   return (
@@ -68,46 +43,21 @@ function App() {
           <span className="semi-bold queen">queen of one trade</span>, but for
           now, I'm like the Jack of all trades.
         </span>
-        <span className="app-main--social-links">{renderSocialLinks()}</span>
+        <span className="app-main--social-links">{<SocialLinks />}</span>
       </main>
       <section id="app-work" className="app-feature-work">
         <h2 className="app-section-heading">FEATURE WORK</h2>
         {featureWork.map((feat) => {
+          const imgUrl = `/images/${feat.tag}.jpg`;
           return (
-            <div className="app-feature-work--item">
-              <img
-                className="app-feature-work--image"
-                src={process.env.PUBLIC_URL + "/images/" + feat.tag + ".jpg"}
-                alt={feat.alt}
-              />
-              <div className="app-feature-work--item-info">
-                <p className="app-feature-work--item-info--role">{feat.role}</p>
-                <h3 className="halant app-feature-work--item-info--title">
-                  {feat.name}
-                </h3>
-                <p>{feat.description}</p>
-                <ul className="app-feature-work--item-info--tech">
-                  {feat.tech.map((tech) => {
-                    return <li>{tech}</li>;
-                  })}{" "}
-                </ul>
-                <ul className="app-feature-work--item-info--links">
-                  <li>
-                    <a href={feat.github} aria-label="GitHub">
-                      <FontAwesomeIcon icon={["fab", "github"]} />
-                    </a>
-                  </li>
-                  <li>
-                    <a href={feat.link} aria-label={`View ${feat.name}`}>
-                      <FontAwesomeIcon
-                        icon={["fas", "external-link-alt"]}
-                        role="img"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <FeatureWork
+              url={imgUrl}
+              alt={feat.alt}
+              role={feat.role}
+              name={feat.name}
+              description={feat.description}
+              tech={feat.tech}
+            />
           );
         })}
       </section>
@@ -117,22 +67,14 @@ function App() {
           {otherWork.map((other) => {
             const imgUrl = `/images/${other.tag}.jpg`;
             return (
-              <div className="app-card">
-                <img
-                  src={process.env.PUBLIC_URL + imgUrl}
-                  alt={other.tag}
-                  className="app-card--image"
-                />
-                {other.tag === "dailyillustration" ? (
-                  <span className="app-card--title">
-                    {other.name} on <a href="Redbubble.com">{other.type}</a>
-                  </span>
-                ) : (
-                  <span className="app-card--title">
-                    {other.name} - {other.year} - {other.type}
-                  </span>
-                )}
-              </div>
+              <WorkCard
+                url={imgUrl}
+                alt={other.tag}
+                tag={other.tag}
+                name={other.name}
+                year={other.year}
+                type={other.type}
+              />
             );
           })}
         </div>
@@ -170,7 +112,7 @@ function App() {
           />
         </div>
       </section>
-      <footer>{renderSocialLinks()}</footer>
+      <footer>{<SocialLinks />}</footer>
     </div>
   );
 }

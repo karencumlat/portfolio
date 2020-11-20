@@ -1,0 +1,41 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import "./featureWork.css";
+
+function FeatureWork(props) {
+  return (
+    <div className="app-feature-work--item">
+      <img
+        className="app-feature-work--image"
+        src={props.url}
+        alt={props.alt}
+      />
+      <div className="app-feature-work--item-info">
+        <p className="app-feature-work--item-info--role">{props.role}</p>
+        <h3 className="halant app-propsure-work--item-info--title">
+          {props.name}
+        </h3>
+        <p>{props.description}</p>
+        <ul className="app-propsure-work--item-info--tech">
+          {props.tech.map((tech) => {
+            return <li>{tech}</li>;
+          })}{" "}
+        </ul>
+        <ul className="app-propsure-work--item-info--links">
+          <li>
+            <a href={props.github} aria-label="GitHub">
+              <FontAwesomeIcon icon={["fab", "github"]} />
+            </a>
+          </li>
+          <li>
+            <a href={props.link} aria-label={`View ${props.name}`}>
+              <FontAwesomeIcon icon={["fas", "external-link-alt"]} role="img" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default FeatureWork;

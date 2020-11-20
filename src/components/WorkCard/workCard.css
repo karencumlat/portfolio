@@ -1,0 +1,34 @@
+.app-card {
+  padding: 1em 0.5em;
+  width: 50%;
+  height: auto;
+}
+
+.app-card--image {
+  width: 100%;
+  height: 100%;
+}
+
+.app-card--title {
+  font-size: 0.85em;
+}
+
+.app-card--title > a:link {
+  border-bottom: 1px dotted;
+}
+
+@media screen and (max-width: 600px) {
+  .app-card {
+    padding: 0.5em;
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .app-card {
+    padding: 1em 0.5em;
+    width: 100%;
+    height: auto;
+  }
+}
