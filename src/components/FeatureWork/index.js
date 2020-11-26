@@ -12,16 +12,16 @@ function FeatureWork(props) {
       />
       <div className="app-feature-work--item-info">
         <p className="app-feature-work--item-info--role">{props.role}</p>
-        <h3 className="halant app-propsure-work--item-info--title">
+        <h3 className="halant app-feature-work--item-info--title">
           {props.name}
         </h3>
         <p>{props.description}</p>
-        <ul className="app-propsure-work--item-info--tech">
+        <ul className="app-feature-work--item-info--tech">
           {props.tech.map((tech) => {
             return <li>{tech}</li>;
           })}{" "}
         </ul>
-        <ul className="app-propsure-work--item-info--links">
+        <ul className="app-feature-work--item-info--links">
           <li>
             <a href={props.github} aria-label="GitHub">
               <FontAwesomeIcon icon={["fab", "github"]} />

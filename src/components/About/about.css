@@ -1,0 +1,24 @@
+.app-about-info {
+  display: flex;
+  align-items: center;
+}
+
+.app-about--info-content > p {
+  margin: 1em 0;
+  width: 75%;
+}
+
+.app-about-image {
+  width: 25%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .app-about-image {
+    display: none;
+  }
+
+  .app-about--info-content > p {
+    width: 100%;
+  }
+}

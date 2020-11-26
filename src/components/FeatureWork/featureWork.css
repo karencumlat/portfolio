@@ -1,7 +1,7 @@
 .app-feature-work--item {
   display: flex;
   align-items: center;
-  margin: 2em 0;
+  margin: 2.5em 0;
 }
 
 .app-feature-work--item-info {
@@ -11,6 +11,7 @@
 .app-feature-work--image {
   width: 50%;
   height: auto;
+  border: 1px solid #ddd;
 }
 
 .app-feature-work--item-info--role {

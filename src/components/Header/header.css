@@ -1,0 +1,14 @@
+.app-nav {
+  display: flex;
+  flex: 1;
+}
+
+.app-nav--item {
+  flex: 1;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .app-nav {
+    text-align: center;
+  }
+}
