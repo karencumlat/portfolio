@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://karencumlat.com/static/css/main.c0723e74.chunk.css",
-    "main.js": "https://karencumlat.com/static/js/main.25fd2e45.chunk.js",
-    "main.js.map": "https://karencumlat.com/static/js/main.25fd2e45.chunk.js.map",
-    "runtime-main.js": "https://karencumlat.com/static/js/runtime-main.87b785db.js",
-    "runtime-main.js.map": "https://karencumlat.com/static/js/runtime-main.87b785db.js.map",
-    "static/js/2.8b0c511b.chunk.js": "https://karencumlat.com/static/js/2.8b0c511b.chunk.js",
-    "static/js/2.8b0c511b.chunk.js.map": "https://karencumlat.com/static/js/2.8b0c511b.chunk.js.map",
-    "static/js/3.c7661bb5.chunk.js": "https://karencumlat.com/static/js/3.c7661bb5.chunk.js",
-    "static/js/3.c7661bb5.chunk.js.map": "https://karencumlat.com/static/js/3.c7661bb5.chunk.js.map",
+    "main.css": "https://karencumlat.com/static/css/main.39ed8042.chunk.css",
+    "main.js": "https://karencumlat.com/static/js/main.f6e78527.chunk.js",
+    "main.js.map": "https://karencumlat.com/static/js/main.f6e78527.chunk.js.map",
+    "runtime-main.js": "https://karencumlat.com/static/js/runtime-main.7ff1884f.js",
+    "runtime-main.js.map": "https://karencumlat.com/static/js/runtime-main.7ff1884f.js.map",
+    "static/js/2.abe8d42b.chunk.js": "https://karencumlat.com/static/js/2.abe8d42b.chunk.js",
+    "static/js/2.abe8d42b.chunk.js.map": "https://karencumlat.com/static/js/2.abe8d42b.chunk.js.map",
+    "static/js/3.1d66d98d.chunk.js": "https://karencumlat.com/static/js/3.1d66d98d.chunk.js",
+    "static/js/3.1d66d98d.chunk.js.map": "https://karencumlat.com/static/js/3.1d66d98d.chunk.js.map",
     "index.html": "https://karencumlat.com/index.html",
-    "static/css/main.c0723e74.chunk.css.map": "https://karencumlat.com/static/css/main.c0723e74.chunk.css.map",
-    "static/js/2.8b0c511b.chunk.js.LICENSE.txt": "https://karencumlat.com/static/js/2.8b0c511b.chunk.js.LICENSE.txt"
+    "static/css/main.39ed8042.chunk.css.map": "https://karencumlat.com/static/css/main.39ed8042.chunk.css.map",
+    "static/js/2.abe8d42b.chunk.js.LICENSE.txt": "https://karencumlat.com/static/js/2.abe8d42b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.87b785db.js",
-    "static/js/2.8b0c511b.chunk.js",
-    "static/css/main.c0723e74.chunk.css",
-    "static/js/main.25fd2e45.chunk.js"
+    "static/js/runtime-main.7ff1884f.js",
+    "static/js/2.abe8d42b.chunk.js",
+    "static/css/main.39ed8042.chunk.css",
+    "static/js/main.f6e78527.chunk.js"
   ]
 }
