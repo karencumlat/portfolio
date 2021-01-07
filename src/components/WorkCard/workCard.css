@@ -1,6 +1,6 @@
 .app-card {
-  padding: 1em 0.5em;
-  width: 50%;
+  padding: 1em 0.25em;
+  width: 25%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .app-card--image {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 

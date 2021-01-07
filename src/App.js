@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
-import About from "./components/About";
-import FeatureWork from "./components/FeatureWork";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import SocialLinks from "./components/SocialLinks";
-import WorkCard from "./components/WorkCard";
+import About from './components/About';
+import FeatureWork from './components/FeatureWork';
+import Header from './components/Header';
+import Main from './components/Main';
+import SocialLinks from './components/SocialLinks';
+import WorkCard from './components/WorkCard';
 
-import "./App.css";
-import "./helpers/fontawesome";
-import { featureWork, otherWork } from "./helpers/data";
+import './App.css';
+import './helpers/fontawesome';
+import { featureWork, otherWork } from './helpers/data';
 
 function App() {
   return (
     <div className="app">
       <Header />
       <Main />
-      <section id="app-work" className="app-feature-work">
+      <section id="work" className="app-feature-work">
         <h2 className="app-section-heading">FEATURE WORK</h2>
         {featureWork.map((feat) => {
           const imgUrl = `/images/${feat.tag}.jpg`;

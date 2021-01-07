@@ -1,8 +1,8 @@
-import "./about.css";
+import './about.css';
 
 function About() {
   return (
-    <section id="app-about" class="app-about">
+    <section id="about" class="app-about">
       <h2 className="app-section-heading">ABOUT ME</h2>
       <div className="app-about-info">
         <div className="app-about--info-content">
@@ -18,8 +18,8 @@ function About() {
           <div className="app-contact">
             <a href="mailto:karencumlat@gmail.com" className="say-hello">
               Say hello
-            </a>{" "}
-            or checkout my{" "}
+            </a>{' '}
+            or checkout my{' '}
             <a
               href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
               className="resume"
@@ -29,7 +29,7 @@ function About() {
           </div>
         </div>
         <img
-          src={process.env.PUBLIC_URL + "/images/karen.jpg"}
+          src={process.env.PUBLIC_URL + '/images/karen.jpg'}
           alt="Karen Cumlat"
           className="app-about-image"
         />

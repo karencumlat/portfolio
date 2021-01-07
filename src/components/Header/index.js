@@ -1,4 +1,4 @@
-import "./header.css";
+import './header.css';
 
 function Header() {
   return (
@@ -10,10 +10,10 @@ function Header() {
       </h1>
 
       <nav className="app-nav">
-        <a className="app-nav--item" href="#app-work">
+        <a className="app-nav--item" href="#work">
           work
         </a>
-        <a className="app-nav--item" href="#app-about">
+        <a className="app-nav--item" href="#about">
           about
         </a>
         <a
