@@ -8,7 +8,7 @@ function FeatureWork(props) {
       <a href={props.link} className="app-feature-work--link" title={props.alt}>
         <img
           className="app-feature-work--image"
-          src={props.url}
+          src={process.env.PUBLIC_URL + props.url}
           alt={props.alt}
         />
         <div class="overlay"></div>

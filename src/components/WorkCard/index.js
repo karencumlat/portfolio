@@ -3,7 +3,11 @@ import './workCard.css';
 function WorkCard(props) {
   return (
     <div className="app-card">
-      <img src={props.url} alt={props.alt} className="app-card--image" />
+      <img
+        src={process.env.PUBLIC_URL + props.url}
+        alt={props.alt}
+        className="app-card--image"
+      />
       {props.tag === 'dailyillustration' ? (
         <span className="app-card--title">
           {props.name} on{' '}
