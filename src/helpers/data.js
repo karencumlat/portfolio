@@ -46,12 +46,46 @@ export const featureWork = [
 ];
 
 export const otherWork = [
-  { name: 'EP40', tag: 'ep40', type: 'image compositing', year: 2019 },
-  { name: ' Stranger', tag: 'stranger', type: 'digital painting', year: 2019 },
-  { name: 'Popcorn Maker', tag: 'popcorn', type: 'illustration', year: 2019 },
   {
-    name: 'Stickers available',
-    tag: 'dailyillustration',
+    name: 'EP40',
+    tag: 'ep40',
+    type: 'image compositing',
+    year: 2019,
+    url: '',
+  },
+  {
+    name: ' Stranger',
+    tag: 'stranger',
+    type: 'digital painting',
+    year: 2019,
+    url: '',
+  },
+  {
+    name: 'Popcorn Maker',
+    tag: 'popcorn',
+    type: 'illustration',
+    year: 2019,
+    url: '',
+  },
+  {
+    name: 'Illustrations for',
+    tag: 'feet',
+    type: 'DressMyFeet',
+    year: 2020,
+    url: 'https://karencumlat.github.io/dressmyfeet/',
+  },
+  {
+    name: 'Illustrations for',
+    tag: 'dinoworld',
+    type: 'DinoWorld',
+    year: 2019,
+    url: 'https://karencumlat.github.io/Dino-World/',
+  },
+  {
+    name: 'Stickers available on',
+    tag: 'basketball',
     type: 'Redbubble',
+    year: 2016,
+    url: 'https://www.redbubble.com/people/karencumlat/shop',
   },
 ];

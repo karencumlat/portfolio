@@ -22,6 +22,7 @@ function App() {
           const imgUrl = `/images/${feat.tag}.jpg`;
           return (
             <FeatureWork
+              key={feat.name}
               url={imgUrl}
               alt={feat.alt}
               role={feat.role}
@@ -41,12 +42,14 @@ function App() {
             const imgUrl = `/images/${other.tag}.jpg`;
             return (
               <WorkCard
+                key={other.tag}
                 url={imgUrl}
                 alt={other.tag}
                 tag={other.tag}
                 name={other.name}
                 year={other.year}
                 type={other.type}
+                link={other.url}
               />
             );
           })}

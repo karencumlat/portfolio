@@ -8,12 +8,9 @@ function WorkCard(props) {
         alt={props.alt}
         className="app-card--image"
       />
-      {props.tag === 'dailyillustration' ? (
+      {props.link !== '' ? (
         <span className="app-card--title">
-          {props.name} on{' '}
-          <a href="https://www.redbubble.com/people/karencumlat/shop">
-            {props.type}
-          </a>
+          {props.name} <a href={props.link}>{props.type}</a>
         </span>
       ) : (
         <span className="app-card--title">
