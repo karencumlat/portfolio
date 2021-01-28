@@ -11,10 +11,6 @@ function About() {
             end developer based in Vancouver.
           </p>
 
-          <p>
-            Oh! In my spare time I talk to my cat or Netflix binge-watching .
-          </p>
-
           <div className="app-contact">
             <a href="mailto:karencumlat@gmail.com" className="say-hello">
               Say hello

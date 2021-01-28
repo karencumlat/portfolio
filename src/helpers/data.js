@@ -1,16 +1,5 @@
 export const featureWork = [
   {
-    name: 'KDDb',
-    role: 'Hybrid Designer',
-    tag: 'kddb',
-    tech: ['React', 'CSS', 'TMDb API'],
-    description:
-      'Created a Korean Drama database using the TMDb open-source API',
-    link: 'https://karencumlat.github.io/kddb',
-    github: 'https://github.com/karencumlat/kddb',
-    alt: 'KDDb Homepage',
-  },
-  {
     name: 'Paprika',
     role: 'UX Developer',
     tag: 'paprika',
@@ -32,7 +21,17 @@ export const featureWork = [
     github: '#',
     alt: 'Wasabicons library',
   },
-
+  {
+    name: 'KDDb',
+    role: 'Hybrid Designer',
+    tag: 'kddb',
+    tech: ['React', 'CSS', 'TMDb API'],
+    description:
+      'Created a Korean Drama database using the TMDb open-source API',
+    link: 'https://karencumlat.github.io/kddb',
+    github: 'https://github.com/karencumlat/kddb',
+    alt: 'KDDb Homepage',
+  },
   {
     name: 'Dress My Feet',
     role: 'Hybrid Designer',
