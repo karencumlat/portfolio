@@ -11,7 +11,7 @@ function FeatureWork(props) {
           src={process.env.PUBLIC_URL + props.url}
           alt={props.alt}
         />
-        <div class="overlay"></div>
+        <div className="overlay"></div>
       </a>
       <div className="app-feature-work--item-info">
         <p className="app-feature-work--item-info--role">{props.role}</p>
