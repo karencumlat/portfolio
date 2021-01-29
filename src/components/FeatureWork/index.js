@@ -15,13 +15,13 @@ function FeatureWork(props) {
       </a>
       <div className="app-feature-work--item-info">
         <p className="app-feature-work--item-info--role">{props.role}</p>
-        <h3 className="halant app-feature-work--item-info--title">
+        <h3 className="secondary-font app-feature-work--item-info--title">
           {props.name}
         </h3>
         <p>{props.description}</p>
         <ul className="app-feature-work--item-info--tech">
           {props.tech.map((tech) => {
-            return <li>{tech}</li>;
+            return <li key={tech}>{tech}</li>;
           })}{' '}
         </ul>
         <ul className="app-feature-work--item-info--links">

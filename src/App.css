@@ -1,5 +1,5 @@
-.halant {
-  font-family: 'Halant', serif;
+.secondary-font {
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .semi-bold {
@@ -32,7 +32,7 @@
 }
 
 .app-section-heading {
-  font-size: 1em;
+  font-size: 1.025em;
   color: #162938;
 }
 
