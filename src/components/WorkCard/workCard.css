@@ -31,7 +31,7 @@
 @media screen and (max-width: 1024px) and (min-width: 600px) {
   .app-card {
     padding: 1em 0.5em;
-    width: 100%;
+    width: 33%;
     height: auto;
   }
 }

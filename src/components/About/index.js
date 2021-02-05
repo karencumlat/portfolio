@@ -17,7 +17,7 @@ function About() {
             </a>{' '}
             or checkout my{' '}
             <a
-              href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
+              href="https://drive.google.com/file/d/12x40Wbz0ZUYKdRUr1rbqRlpj_TjDIoZ4/view?usp=sharing"
               className="resume"
             >
               Resume

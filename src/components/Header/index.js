@@ -5,7 +5,7 @@ function Header() {
     <header className="app-header">
       <h1 className="app-header--heading">
         <a href="https://karencumlat.ca/">
-          Karen Cumlat — Digital Artist & Front End Developer
+          Karen Cumlat — UI Developer & Digital Artist
         </a>
       </h1>
 
@@ -18,7 +18,7 @@ function Header() {
         </a>
         <a
           className="app-nav--item"
-          href="https://karencumlat.ca/files/Karen_Cumlat_Resume.pdf"
+          href="https://drive.google.com/file/d/12x40Wbz0ZUYKdRUr1rbqRlpj_TjDIoZ4/view?usp=sharing"
         >
           resume
         </a>
