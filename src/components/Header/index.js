@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="app-header">
       <h1 className="app-header--heading">
-        <a href="https://karencumlat.ca/">
+        <a href="https://karencumlat.com/">
           Karen Cumlat — UI Developer & Digital Artist
         </a>
       </h1>
