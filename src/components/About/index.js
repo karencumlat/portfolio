@@ -28,6 +28,7 @@ function About() {
           src={process.env.PUBLIC_URL + '/images/karen.jpg'}
           alt="Karen Cumlat"
           className="app-about-image"
+          loading="lazy"
         />
       </div>
     </section>

@@ -7,6 +7,7 @@ function WorkCard(props) {
         src={process.env.PUBLIC_URL + props.url}
         alt={props.alt}
         className="app-card--image"
+        loading="lazy"
       />
       {props.link !== '' ? (
         <span className="app-card--title">

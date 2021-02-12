@@ -10,6 +10,7 @@ function FeatureWork(props) {
           className="app-feature-work--image"
           src={process.env.PUBLIC_URL + props.url}
           alt={props.alt}
+          loading="lazy"
         />
         <div className="overlay"></div>
       </a>
