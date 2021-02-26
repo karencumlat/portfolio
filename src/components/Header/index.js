@@ -5,7 +5,7 @@ function Header() {
     <header className="app-header">
       <h1 className="app-header--heading">
         <a href="https://karencumlat.com/">
-          Karen Cumlat — UI Developer & Digital Artist
+          Karen Cumlat — UX Developer & Digital Artist
         </a>
       </h1>
 
