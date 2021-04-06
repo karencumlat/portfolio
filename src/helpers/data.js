@@ -43,6 +43,17 @@ export const featureWork = [
     github: 'https://github.com/karencumlat/dressmyfeet',
     alt: 'Dress my feet basic black sneakers',
   },
+  {
+    name: 'Happihour',
+    role: 'Hybrid Designer',
+    tag: 'happihour',
+    tech: ['React Native', 'CSS', 'GitHub'],
+    description:
+      'A mobile app built to connect like-minded people in fun and affordable environments',
+    link: '',
+    github: 'https://github.com/peterlee92/Happihour',
+    alt: 'Happihour screenshot',
+  },
 ];
 
 export const otherWork = [

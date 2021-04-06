@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+input[type='button'] {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 a {
   color: #162938;
   cursor: pointer;
