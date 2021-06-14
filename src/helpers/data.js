@@ -1,5 +1,27 @@
 export const featureWork = [
   {
+    name: 'Find the Product',
+    role: 'Hybrid Designer',
+    tag: 'findtheproduct',
+    tech: ['React', 'Styled-Components', 'GitHub'],
+    description:
+      'Find the product helps creating shopping list and finding the in-store location of items ',
+    link: 'https://karencumlat.github.io/findtheproduct/',
+    github: 'https://github.com/karencumlat/findtheproduct',
+    alt: 'Find the product screenshot',
+  },
+  {
+    name: 'KDDB',
+    role: 'Hybrid Designer',
+    tag: 'kddb',
+    tech: ['React', 'Styled-Components', 'TMDb API'],
+    description:
+      'Created a Korean Drama database using the TMDb open-source API',
+    link: 'https://karencumlat.github.io/kddb',
+    github: 'https://github.com/karencumlat/kddb',
+    alt: 'KDDB Watched page',
+  },
+  {
     name: 'Paprika',
     role: 'UX Developer',
     tag: 'paprika',
@@ -21,39 +43,29 @@ export const featureWork = [
     github: '#',
     alt: 'Wasabicons library',
   },
-  {
-    name: 'KDDb',
-    role: 'Hybrid Designer',
-    tag: 'kddb',
-    tech: ['React', 'CSS', 'TMDb API'],
-    description:
-      'Created a Korean Drama database using the TMDb open-source API',
-    link: 'https://karencumlat.github.io/kddb',
-    github: 'https://github.com/karencumlat/kddb',
-    alt: 'KDDb Homepage',
-  },
+
   {
     name: 'Dress My Feet',
     role: 'Hybrid Designer',
     tag: 'dressmyfeet',
     tech: ['React', 'CSS', 'GitHub'],
     description:
-      'An illustration/web project showcasing some love for food with these fresh and tasty Bucketfeet shoe designs.',
+      'An illustration and web project showcasing some love for food with these fresh and tasty Bucketfeet shoe designs.',
     link: 'https://karencumlat.github.io/dressmyfeet/',
     github: 'https://github.com/karencumlat/dressmyfeet',
     alt: 'Dress my feet basic black sneakers',
   },
-  {
-    name: 'Happihour',
-    role: 'Hybrid Designer',
-    tag: 'happihour',
-    tech: ['React Native', 'CSS', 'GitHub'],
-    description:
-      'A mobile app built to connect like-minded people in fun and affordable environments',
-    link: '',
-    github: 'https://github.com/peterlee92/Happihour',
-    alt: 'Happihour screenshot',
-  },
+  // {
+  //   name: 'Happihour',
+  //   role: 'Hybrid Designer',
+  //   tag: 'happihour',
+  //   tech: ['React Native', 'CSS', 'GitHub'],
+  //   description:
+  //     'A mobile app built to connect like-minded people in fun and affordable environments',
+  //   link: '',
+  //   github: 'https://github.com/peterlee92/Happihour',
+  //   alt: 'Happihour screenshot',
+  // },
 ];
 
 export const otherWork = [
