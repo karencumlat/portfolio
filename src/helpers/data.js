@@ -1,7 +1,7 @@
 export const featureWork = [
   {
     name: 'Find the Product',
-    role: 'Hybrid Designer',
+    role: 'Personal Project',
     tag: 'findtheproduct',
     tech: ['React', 'Styled-Components', 'GitHub'],
     description:
@@ -12,7 +12,7 @@ export const featureWork = [
   },
   {
     name: 'KDDB',
-    role: 'Hybrid Designer',
+    role: 'Personal Project',
     tag: 'kddb',
     tech: ['React', 'Styled-Components', 'TMDb API'],
     description:
@@ -46,7 +46,7 @@ export const featureWork = [
 
   {
     name: 'Dress My Feet',
-    role: 'Hybrid Designer',
+    role: 'Personal Project',
     tag: 'dressmyfeet',
     tech: ['React', 'CSS', 'GitHub'],
     description:

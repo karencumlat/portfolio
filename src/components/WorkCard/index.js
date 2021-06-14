@@ -3,7 +3,7 @@ import './workCard.css';
 function WorkCard(props) {
   return (
     <div className="app-card">
-      <a href={props.link} title={props.link}>
+      <a href={props.link} title={props.alt}>
         <img
           src={process.env.PUBLIC_URL + props.url}
           alt={props.alt}

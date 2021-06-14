@@ -44,3 +44,6 @@ ul {
 ul > li {
   padding: 0 0.5em 0 0;
 }
+html {
+  scroll-behavior: smooth;
+}

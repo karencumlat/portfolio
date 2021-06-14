@@ -6,9 +6,7 @@ function Header() {
   return (
     <header className="app-header">
       <h1 className="app-header--heading">
-        <a href="https://karencumlat.com/">
-          Karen Cumlat — UX Developer & Digital Artist
-        </a>
+        <a href="https://karencumlat.com/">Karen Cumlat</a>
       </h1>
 
       <nav className="app-nav">
