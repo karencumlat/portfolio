@@ -33,3 +33,14 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .app-nav {
+    text-align: center;
+  }
+
+  .app-nav--item {
+    padding: 15px 5px;
+    letter-spacing: 0;
+  }
+}
