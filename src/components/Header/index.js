@@ -1,5 +1,7 @@
 import './header.css';
 
+import { menuItem } from '../../helpers/menu';
+
 function Header() {
   return (
     <header className="app-header">
@@ -10,21 +12,21 @@ function Header() {
       </h1>
 
       <nav className="app-nav">
-        <a className="app-nav--item" href="#work">
-          work
-        </a>
-        <a className="app-nav--item" href="#about">
-          about
-        </a>
-        <a
-          className="app-nav--item"
-          href="https://drive.google.com/file/d/12x40Wbz0ZUYKdRUr1rbqRlpj_TjDIoZ4/view?usp=sharing"
-        >
-          resume
-        </a>
-        <a className="app-nav--item" href="mailto:karencumlat@gmail.com">
-          say hello
-        </a>
+        {menuItem.map((i) => {
+          return i.item === 'contact' ? (
+            <a className="app-nav--item contact" href={i.link} key={i.item}>
+              {i.item}
+            </a>
+          ) : i.link !== '' ? (
+            <a className="app-nav--item" href={i.link} key={i.item}>
+              {i.item}
+            </a>
+          ) : (
+            <a className="app-nav--item" href={`#${i.item}`} key={i.item}>
+              {i.item}
+            </a>
+          );
+        })}
       </nav>
     </header>
   );

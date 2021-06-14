@@ -16,8 +16,8 @@ function App() {
     <div className="app">
       <Header />
       <Main />
-      <section id="work" className="app-feature-work">
-        <h2 className="app-section-heading">FEATURE WORK</h2>
+      <section id="web" className="app-feature-work">
+        <h2 className="app-section-heading">WEB PROJECT</h2>
         {featureWork.map((feat) => {
           const imgUrl = `/images/${feat.tag}.jpg`;
           return (
@@ -35,8 +35,8 @@ function App() {
           );
         })}
       </section>
-      <section className="app-other--work">
-        <h2 className="app-section-heading">OTHER WORK</h2>
+      <section className="app-other--work" id="design">
+        <h2 className="app-section-heading">DESIGN PROJECT</h2>
         <div className="app-card-group">
           {otherWork.map((other) => {
             const imgUrl = `/images/${other.tag}.jpg`;
@@ -44,7 +44,7 @@ function App() {
               <WorkCard
                 key={other.tag}
                 url={imgUrl}
-                alt={other.tag}
+                alt={`${other.name} ${other.type}`}
                 tag={other.tag}
                 name={other.name}
                 year={other.year}
