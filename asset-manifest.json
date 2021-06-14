@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "https://karencumlat.com/static/css/main.22f5c6f1.chunk.css",
-    "main.js": "https://karencumlat.com/static/js/main.01bce98a.chunk.js",
-    "main.js.map": "https://karencumlat.com/static/js/main.01bce98a.chunk.js.map",
+    "main.css": "https://karencumlat.com/static/css/main.f02c0e88.chunk.css",
+    "main.js": "https://karencumlat.com/static/js/main.0af586dc.chunk.js",
+    "main.js.map": "https://karencumlat.com/static/js/main.0af586dc.chunk.js.map",
     "runtime-main.js": "https://karencumlat.com/static/js/runtime-main.7ff1884f.js",
     "runtime-main.js.map": "https://karencumlat.com/static/js/runtime-main.7ff1884f.js.map",
     "static/js/2.abe8d42b.chunk.js": "https://karencumlat.com/static/js/2.abe8d42b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.1d66d98d.chunk.js": "https://karencumlat.com/static/js/3.1d66d98d.chunk.js",
     "static/js/3.1d66d98d.chunk.js.map": "https://karencumlat.com/static/js/3.1d66d98d.chunk.js.map",
     "index.html": "https://karencumlat.com/index.html",
-    "static/css/main.22f5c6f1.chunk.css.map": "https://karencumlat.com/static/css/main.22f5c6f1.chunk.css.map",
+    "static/css/main.f02c0e88.chunk.css.map": "https://karencumlat.com/static/css/main.f02c0e88.chunk.css.map",
     "static/js/2.abe8d42b.chunk.js.LICENSE.txt": "https://karencumlat.com/static/js/2.abe8d42b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7ff1884f.js",
     "static/js/2.abe8d42b.chunk.js",
-    "static/css/main.22f5c6f1.chunk.css",
-    "static/js/main.01bce98a.chunk.js"
+    "static/css/main.f02c0e88.chunk.css",
+    "static/js/main.0af586dc.chunk.js"
   ]
 }
