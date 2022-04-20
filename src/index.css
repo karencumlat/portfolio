@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14pt;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #f8f8f8;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -47,3 +47,4 @@ ul > li {
 html {
   scroll-behavior: smooth;
 }
+

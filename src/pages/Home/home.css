@@ -1,0 +1,74 @@
+.app-main {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.025em;
+  line-height: 3.25rem;
+  width: 60%;
+  padding: 10% 0 0;
+  margin: 0 auto;
+}
+
+.app-main--name {
+  font-size: 2.5em;
+}
+
+.app-main--description {
+  font-size: 2em;
+}
+
+.app-home-image{
+  display: none;
+}
+
+.app-main--social-links {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .app-main {
+    width: 80%;
+    line-height: 1.5rem;
+
+    padding: 3em 0;
+    letter-spacing: normal;
+  }
+  .app-main--name {
+    font-size: 1.5em;
+  }
+
+  .app-main--description {
+    font-size: 1em;
+  }
+
+  .app-home-image{
+    display:block;
+  }
+
+  .app-main--social-links {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .app-main {
+    width: 90%;
+    padding: 10% 5%;
+  }
+  .app-main--name {
+    font-size: 2em;
+  }
+
+  .app-main--description {
+    font-size: 1.65em;
+  }
+
+  .app-main--social-links {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1824px) {
+  .app-main {
+    padding: 8em 0;
+  }
+}
