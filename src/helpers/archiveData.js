@@ -1,6 +1,14 @@
 export const archiveData = [
   {
     year: '2022',
+    title: "In Season BC's Local Food",
+    made: '—',
+    built: 'Next.js · Tailwind CSS · Vercel',
+    link: 'https://in-season-bc-local-food.vercel.app/',
+    github: 'https://github.com/karencumlat/in-season-bc-local-food',
+  },
+  {
+    year: '2022',
     title: 'Little Foot',
     made: '—',
     built: 'PHP · SQL · Bootstrap · Heroku',

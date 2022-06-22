@@ -1,5 +1,16 @@
 export const featureWork = [
   {
+    name: 'In Season',
+    role: 'Personal Project',
+    tag: 'inseason',
+    tech: ['Next.js', 'Tailwind CSS', 'Vercel'],
+    description:
+      ' Keep track of exactly what food is in season in South Western BC at any given time ',
+    link: 'https://in-season-bc-local-food.vercel.app/',
+    github: 'https://github.com/karencumlat/in-season-bc-local-food',
+    alt: 'In Season screenshot',
+  },
+  {
     name: 'Find the Product',
     role: 'Personal Project',
     tag: 'findtheproduct',
@@ -22,10 +33,10 @@ export const featureWork = [
     alt: 'KDDB Watched page',
   },
   {
-    name: 'LittleFoot',
+    name: 'Little Foot',
     role: 'Personal Project',
     tag: 'littlefoot',
-    tech: ['Bootstrap', 'PHP', 'Heroku'],
+    tech: ['Bootstrap', 'PHP', 'MySQL', 'Heroku'],
     description: 'Website helping individuals reduce their carbon footprint',
     link: 'https://little-foot-app.herokuapp.com/',
     github: 'https://github.com/karencumlat/little-foot-app',
