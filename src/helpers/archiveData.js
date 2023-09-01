@@ -11,8 +11,8 @@ export const archiveData = [
     year: '2022',
     title: 'Little Foot',
     made: '—',
-    built: 'PHP · SQL · Bootstrap · Heroku',
-    link: 'https://little-foot-app.herokuapp.com/',
+    built: 'PHP · SQL · Bootstrap · InfinityFree',
+    link: 'http://littlefoot.infinityfreeapp.com/',
     github: 'https://github.com/karencumlat/little-foot-app',
   },
   {
