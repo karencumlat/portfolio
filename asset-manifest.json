@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://karencumlat.com/static/css/main.b11bb3b4.css",
+    "main.js": "https://karencumlat.com/static/js/main.52b3b670.js",
+    "static/js/377.738b5e04.chunk.js": "https://karencumlat.com/static/js/377.738b5e04.chunk.js",
+    "index.html": "https://karencumlat.com/index.html",
+    "main.b11bb3b4.css.map": "https://karencumlat.com/static/css/main.b11bb3b4.css.map",
+    "main.52b3b670.js.map": "https://karencumlat.com/static/js/main.52b3b670.js.map",
+    "377.738b5e04.chunk.js.map": "https://karencumlat.com/static/js/377.738b5e04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b11bb3b4.css",
+    "static/js/main.52b3b670.js"
+  ]
+}
